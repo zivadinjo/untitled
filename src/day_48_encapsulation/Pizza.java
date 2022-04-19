@@ -32,12 +32,15 @@ public class Pizza {
     }
 
     public double calculatePrice() {
-        double price = size.equalsIgnoreCase("smal") ? 4 : size.equalsIgnoreCase("medium") ? 6 : 8;
+        if (size == null ){
+            return 0;
+        }
+        double price = size.equalsIgnoreCase("small") ? 4 : size.equalsIgnoreCase("medium") ? 6 : 8;
         return price + (numberOfToppings * 0.75);
     }
 
     @Override
     public String toString() {
-        return "Pizza size" + size + ", number of toppings=" + numberOfToppings + ", price : $ " + calculatePrice();
+        return "Pizza size " + size + ", number of toppings = " + numberOfToppings + ", price : $ " + calculatePrice();
     }
 }
