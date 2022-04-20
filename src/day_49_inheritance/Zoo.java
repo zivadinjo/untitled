@@ -12,6 +12,11 @@ public class Zoo {
         dog.species = "Dog";
         dog.numberOfLegs = 4;
 
+        Lion lion = new Lion();
+        lion.roar();
+        lion.species = "lion";
+        lion.walk();
+
 
     }
 }
