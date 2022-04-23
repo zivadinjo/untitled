@@ -2,7 +2,7 @@ package practice.inheritance;
 
 public class UseApp {
     public static void main(String[] args) {
-        App app = new App("Facebook", 5.3);
+        App app = new App("YouTube",5.3);
         System.out.println(app);
         app.download();
         Instagram instagram = new Instagram("Instagram",10.23);
