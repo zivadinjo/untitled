@@ -1,0 +1,14 @@
+package day_51_inheritance.lyft;
+
+public class CarrRide {
+    public static void main(String[] args) {
+
+        Lyft obj1 = new Lyft("James");
+        System.out.println(obj1.calculateRate(10));
+
+        LyftXL obj2 = new LyftXL("James");
+        System.out.println(obj2.calculateRate(10));
+
+
+    }
+}
