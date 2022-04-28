@@ -1,4 +1,4 @@
-package practice;
+package practice.mixed;
 
 import javax.swing.text.html.HTML;
 
