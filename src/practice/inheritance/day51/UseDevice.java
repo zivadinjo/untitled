@@ -7,6 +7,8 @@ public class UseDevice {
         Phone obj2 = new Phone("Apple","iPhone",1025,true);
         System.out.println(obj1);
         System.out.println(obj2);
+        obj1.useDevice();
+        obj2.useDevice();
 
 
     }
