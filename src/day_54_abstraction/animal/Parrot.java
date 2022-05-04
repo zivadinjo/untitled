@@ -1,6 +1,8 @@
 package day_54_abstraction.animal;
 
-public final class Parrot extends Bird implements Flyable{
+import day_54_abstraction.language.Language;
+
+public final class Parrot extends Bird implements Flyable, Language {
 
     @Override
     public void eat() {
@@ -10,5 +12,15 @@ public final class Parrot extends Bird implements Flyable{
     @Override
     public void fly() {
 
+    }
+
+    @Override
+    public void hi() {
+        System.out.println("Hello Hello");
+    }
+
+    @Override
+    public void bye() {
+        System.out.println("Bye bye");
     }
 }
