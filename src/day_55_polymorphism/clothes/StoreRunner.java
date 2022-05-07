@@ -37,7 +37,24 @@ public class StoreRunner {
 //        jacket4.wear(); -> HasHood reference does not have visibility for wear() method
         jacket4.putOnHood();
 
+        System.out.println();
+        buy(tshirt);
+        buy(jacket1);
+        buy(new TShirt());
+        buy(new Jacket());
+
+
 
 
     }
+
+    public static void buy(Clothes clothes){
+        if (clothes instanceof TShirt){
+            System.out.println("Bought tshirt");
+        }else if(clothes instanceof Jacket){
+            System.out.println("Bought a cool jacket");
+        }
+    }
+
+
 }
