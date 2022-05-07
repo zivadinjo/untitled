@@ -26,7 +26,7 @@ public class Runner {
         amazon.viewCart();
         System.out.println(amazon.country);
 
-        System.out.println(Shipping.country); // proper way to access static information it the interface
+        System.out.println(Shipping.country); // proper way to access static information in the interface
 
 
     }
