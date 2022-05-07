@@ -8,14 +8,34 @@ public class Runner {
         //self
         Lizard lizard =  new Lizard();
         lizard.eat();
+        lizard.name = "lizard";
+        System.out.println(lizard.name);
+        lizard.numberOfClaws = 10;
+        System.out.println(lizard.numberOfClaws);
+        lizard.skinColor = "camo";
+        System.out.println(lizard.skinColor);
+        System.out.println();
 
         //super class -> Reptile
         Reptile reptile = new Lizard();
         reptile.eat();
+        reptile.name = "lizard";
+        System.out.println(reptile.name);
+        reptile.numberOfClaws = 10;
+        System.out.println(reptile.numberOfClaws);
+//        reptile.skinColor = "camo"; -> Reptile reference doesn't have access to skinColor because it's in Lizard clas
+//        System.out.println(reptile.skinColor);
+        System.out.println();
 
         //super class -> Animal
         Animal animal = new Lizard();
         animal.eat();
+        animal.name = "lizard";
+        System.out.println(animal.name);
+//        animal.numberOfClaws = 10;
+//        System.out.println(animal.numberOfClaws);
+//        animal.skinColor = "camo";
+//        System.out.println(animal.skinColor);
 
          /*
 
