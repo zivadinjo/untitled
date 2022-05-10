@@ -6,16 +6,16 @@ public class JavaTextbook extends EBook {
 
     @Override
     public void read() {
-
+        System.out.println("Reading java textbook");
     }
 
     @Override
     public void download() {
-
+        System.out.println("Downloading java textbook");
     }
 
     @Override
     public void open() {
-
+        System.out.println("Opening java textbook");
     }
 }
