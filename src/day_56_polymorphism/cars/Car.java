@@ -24,6 +24,16 @@ class Dealership {
         System.out.println("Leasing a car" + car.getClass().getName());
     }
 
+    public static Car getCar (int option){
+        if ( option == 1){
+            return new Tesla();
+        }else if ( option == 2){
+            return new Toyota();
+        }else {
+            return new Car();
+        }
+    }
+
 }
 
 class Runner {
