@@ -15,6 +15,7 @@ public class RunnerLibrary {
         book2.name = "Java Programing";
         book2.size = 20.5;
         //book2.fun = true; -> EBook does not have access to fun variable
+        ((JavaTextbook) book2).fun = true; // cast the reference from the parent EBook to the child reference of JavaTextBook and that allows us to access the fun variable
         book2.read();
         book2.open();
         book2.download();
@@ -35,7 +36,14 @@ public class RunnerLibrary {
         //book4.read();
         //book4.open();
         book4.download();
-        //Only thing accessible by Downloadable intterface is download method
+        //Only thing accessible by Downloadable interface is download method
+
+        JavaTextbook book5 = ((JavaTextbook) book4);
+        //book4 was the interface reference we cast the reference to be a JavaTextbook and assigned it to the book5 reference,we are not making new object
+        book5.read();
+        book5.open();
+
+
 
     }
 }
