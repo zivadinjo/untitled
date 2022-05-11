@@ -1,7 +1,6 @@
 package practice.mixed;
 
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.Scanner;
 
 public class EvenOdd {
     public static void main(String[] args) {
@@ -23,6 +22,7 @@ public class EvenOdd {
         System.out.println(strEven);
         System.out.println(strOdd);
     }
+
 }
 
 
