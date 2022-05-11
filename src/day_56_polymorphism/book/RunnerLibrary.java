@@ -42,6 +42,7 @@ public class RunnerLibrary {
         //book4 was the interface reference we cast the reference to be a JavaTextbook and assigned it to the book5 reference,we are not making new object
         book5.read();
         book5.open();
+        book5.fun = false;
 
 
 
