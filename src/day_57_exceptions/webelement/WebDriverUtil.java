@@ -1,4 +1,4 @@
-package day_57_polymorphism.webelement;
+package day_57_exceptions.webelement;
 
 public class WebDriverUtil {
 

@@ -1,19 +1,20 @@
-package day_57_polymorphism.webelement;
+package day_57_exceptions.webelement;
 
 public class Input implements WebElement {
 
     @Override
     public void click() {
-
+        System.out.println("Clicking Input");
     }
 
     @Override
     public String getText() {
-        return null;
+        return "Input Text";
     }
 
     @Override
     public void sendKeys(String txt) {
-
+        System.out.println("Sending txt to Input field");
+        System.out.println(txt);
     }
 }
