@@ -10,29 +10,35 @@ public class RunnerApple {
         Input obj3 = new Input();
         Image obj4 = new Image();
 
-        ArrayList<WebElement>elements = new ArrayList<>();
+        ArrayList<WebElement> elements = new ArrayList<>();
         elements.add(obj);
         elements.add(obj2);
         elements.add(obj3);
         elements.add(obj4);
         elements.add(new Form());
 
-        for (WebElement each : elements){
+        for (WebElement each : elements) {
             System.out.println(each.getText());
 
-            if (each instanceof Form){
-                ((Form)each).submit();
+            if (each instanceof Form) {
+                ((Form) each).submit();
             }
         }
-/*
 
-without instanceof part you would be trying to cast all the obje to Form, but does object dont have is a relation to Form
+        System.out.println();
 
-        (Form) link object
-        (Form) image object
-        (Form) input object
- */
+        WebElement logo = new Image();
+        logo.click(); // -> click method is accessible by the WebElement interface reference then execution happens on object side
 
+//        logo.extension = ".ping"; WebElement interface does not have accessibility to this String variable
+
+        ((Image)logo).extension = ".ping";
+//        ((Image)logo).extension = ".ping"; --> casts the logo (WebElement reference) to a Image reference,than the Image reference has access to the extension variable
+
+        // option 2:
+
+        Image logoAsImage = ((Image)logo);
+        logoAsImage.extension = ".png";
 
     }
 }

@@ -2,6 +2,8 @@ package day_57_exceptions.webelement;
 
 public class Image implements WebElement{
 
+    String extension;
+
     @Override
     public void click() {
         System.out.println("Clicking the image");
