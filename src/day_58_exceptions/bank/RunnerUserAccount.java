@@ -10,7 +10,30 @@ public class RunnerUserAccount {
         System.out.println(accountOne.balance);
 
 
-        accountOne.withdraw(2000);
+//        accountOne.withdraw(2000); --> uncoment this to see the Exception
+
+//        valid login
+        try {
+            accountOne.login("jamesbond","007");
+        } catch (InvalidCredentialsException e) {
+            System.out.println(e.getMessage());
+        }
+
+
+//         invalid username
+        try {
+            accountOne.login("james","007");
+        } catch (InvalidCredentialsException e) {
+            System.out.println(e.getMessage());
+        }
+
+//         invalid password
+        try {
+            accountOne.login("jamesbond","something");
+        } catch (InvalidCredentialsException e) {
+            System.out.println(e.getMessage());
+        }
+
 
     }
 }
