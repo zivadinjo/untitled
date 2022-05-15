@@ -7,7 +7,7 @@ public class TryWithInheritance {
 
 
 
-        } catch (IndexOutOfBoundsException e){
+        } catch (IndexOutOfBoundsException e){      //from child to parent,from the most specific one to most general one
 
         } catch (RuntimeException e){
 
