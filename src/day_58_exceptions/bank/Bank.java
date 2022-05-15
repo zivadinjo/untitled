@@ -10,6 +10,8 @@ public class Bank {
             throw new NotEnoughMoneyException();
         }
 
+        balance -= amountToTakeOut;
+
     }
 
 }
