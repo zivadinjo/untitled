@@ -35,5 +35,8 @@ public class RemoveWhileLooping {
 
         System.out.println(list);
 
+//        list.removeIf(each -> each < 5);
+//        System.out.println(list);            LAMBDA does the same thing removes it if element is less than 5
+
     }
 }
